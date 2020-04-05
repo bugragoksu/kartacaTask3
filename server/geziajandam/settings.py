@@ -24,12 +24,12 @@ SECRET_KEY = '=zd=&$_)gkm_5jt!b0k_c5fn!7+e6&oh@buzf^u6z6%)cbc96k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['134.122.93.152']
-CORS_ORIGIN_ALLOW_ALL = False
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 CORS_ORIGIN_WHITELIST = [
-    'http://134.122.93.152:4200',
+    'http://167.172.164.68:4200',
     'http://localhost:4200'
 ]
 
@@ -120,9 +120,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Istanbul'
 
 USE_I18N = True
 

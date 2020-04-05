@@ -10,7 +10,7 @@ import { catchError } from 'rxjs/operators';
 export class ApiService {
 
 
-  baseUrl = "http://134.122.93.152:8000"
+  baseUrl = "http://167.172.164.68:8000"
   private options = { headers: new HttpHeaders().set('Content-Type', 'application/json') };
 
   constructor(private http: HttpClient) { }
@@ -48,6 +48,7 @@ export class ApiService {
 
   addPost(title: string, desc: string, user: string) {
     var now = new Date();
+    var user="1";
     var formattedDate = now.toISOString().slice(0, 10); //yyyy-mm-dd
     const data = {
       'title': title, 'desc': desc, 'user': user, 'date': formattedDate
